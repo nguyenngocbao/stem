@@ -1,0 +1,7 @@
+services:
+  stem-app:
+    build: .
+    container_name: stem-mang-dien
+    ports:
+      - "80:80"
+    restart: unless-stopped

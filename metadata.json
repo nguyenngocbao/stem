@@ -1,0 +1,6 @@
+{
+  "name": "Dự án STEM: Thiết kế Mạng điện Thông minh",
+  "description": "Nền tảng học tập dự án STEM về hệ thống điện thông minh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

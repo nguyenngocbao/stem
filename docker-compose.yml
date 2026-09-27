@@ -1,7 +1,10 @@
 services:
   stem-app:
     build: .
+    image: stem-mang-dien:latest
     container_name: stem-mang-dien
     ports:
-      - "80:80"
+      # Mặc định chỉ mở trên localhost cổng 8090 để nginx trên host proxy vào
+      # (host nginx đã dùng cổng 80). Đặt HOST_BIND=0.0.0.0 HOST_PORT=80 nếu chạy độc lập.
+      - "${HOST_BIND:-127.0.0.1}:${HOST_PORT:-8090}:80"
     restart: unless-stopped
